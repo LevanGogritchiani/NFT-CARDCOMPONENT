@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QR QARD</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Outfit"
+    />
+    <style>
+      body {
+        background: #0d192c;
+        font-size: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        position: relative;
+        width: 100%;
+        height: 302px;
+        background-color: #00fff8;
+        border-radius: 15px;
+        z-index: 1;
+      }
+
+      div#main {
+        background: #15263f;
+        box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+        border-radius: 15px;
+        width: 302px;
+        height: 548px;
+        padding: 24px;
+      }
+      img#kubi {
+        max-width: 100%;
+        border-radius: 8px;
+        z-index: 1;
+      }
+
+      h1#satauri1 {
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28px;
+        color: #ffffff;
+        margin-top: 24px;
+      }
+      h1#satauri1:hover {
+        color: #00fff8;
+        transition: 0.5s;
+      }
+
+      p#pirveli {
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        color: #8bacd9;
+        height: 52px;
+        left: 6.86%;
+        right: 6.86%;
+        top: calc(50% - 52px / 2 + 122px);
+      }
+
+      footer#id1 {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+        /* display: flexbox; */
+      }
+      p#ETH {
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #00fff8;
+      }
+
+      .clock-txt {
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 7.7px;
+
+        color: #8bacd9;
+      }
+
+      .rectangle {
+        height: 1px;
+        width: 302px;
+        margin-top: 24px;
+        background-color: #2e405a;
+      }
+      footer.Group2 {
+        margin-top: 16px;
+        width: 230px;
+        height: 33px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #creatorimage {
+        height: 33px;
+        width: 33px;
+      }
+
+      .displayinline {
+        display: inline-block;
+        /* width: 50px; */
+      }
+
+      #Name {
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+      }
+
+      #Name:hover {
+        color: #00fff8;
+        transition: 0.5s;
+      }
+      #title {
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #8bacd9;
+      }
+
+      /* .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+      } */
+
+      .middle {
+        transition: 0s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .container:hover .middle {
+        opacity: 1;
+      }
+
+      .image:hover {
+        cursor: pointer;
+        color: cyan;
+        opacity: 0.5;
+        transition: all 0.4s ease;
+      }
+      .middle {
+        z-index: -1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="main">
+      <div class="container">
+        <img id="kubi" src="image-equilibrium.jpg" class="image" />
+        <img src="icon-view.svg" class="middle" />
+      </div>
+
+      <h1 id="satauri1">Equilibrium #3429</h1>
+      <p id="pirveli">
+        Our Equilibrium collection promotes balance and calm
+      </p>
+
+      <footer id="id1">
+        <div style="height: 20px; display: flex; align-items: center;">
+          <img
+            src="icon-ethereum.svg"
+            style="height: 18px; width: 11px; margin-right: 6.49px;"
+          />
+          <p id="ETH">0.041 ETH</p>
+        </div>
+
+        <div style="height: 20px; display: flex; align-items: center;">
+          <img src="icon-clock.svg" style="height: 18px; width: 18px;" />
+
+          <p class="clock-txt">3 Days Left</p>
+        </div>
+      </footer>
+
+      <div class="rectangle"></div>
+
+      <footer class="Group2">
+        <img id="creatorimage" class="diplayinline" src="image-avatar.png" />
+        <footer class="diplayinline">
+          <p class="displayinline" id="title">Creation of</p>
+          <p class="displayinline" id="Name">Jules Wyvern</p>
+        </footer>
+      </footer>
+    </div>
+  </body>
+</html>
